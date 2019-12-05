@@ -6,7 +6,7 @@ const fs = require("fs");
 const DAL = require("./dataAccessLayer");
 const ObjectId = require("mongodb").ObjectID;
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 
